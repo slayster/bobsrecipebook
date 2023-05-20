@@ -21,6 +21,7 @@ class CreateRecipeTable extends Migration
             $table->integer('servings');
             $table->integer('carbs');
             $table->integer('calories');
+            $table->smallInteger('public')->default(0);
             $table->timestamps();
         });
     }
